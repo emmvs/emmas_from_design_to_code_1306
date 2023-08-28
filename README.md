@@ -18,3 +18,4 @@
         "Accept": "text/plain"
       } -->
 <!-- movies_controller -->
+<!-- respond_to -->

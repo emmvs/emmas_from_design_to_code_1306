@@ -17,9 +17,9 @@ export default class extends Controller {
 
   update() {
     // console.log("🔮")
-    const currentQuery = "this.formTarget.action"
-    const currentValue = "this.formTarget.value"
-    const url = `${this.formTarget.action}'?query=${this.formTarget.value}`
+    const currentQuery = this.formTarget.action
+    const currentValue = this.inputTarget.value
+    const url = `${currentQuery}?query=${currentValue}`
 
     // AJAX request
     fetch(url, {
