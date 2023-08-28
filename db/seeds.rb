@@ -1,11 +1,10 @@
+puts "Cleaning DB 🧼"
+Movie.destroy_all
+
+puts "Creating movies! 🎥 🎥 🎥"
 movies = [
-  "batman",
-  "superman",
-  "spiderman",
-  "wonder woman",
-  "thor",
-  "black panther",
-  "avengers"
+  "barbie",
+  "oppenheimer"
 ]
 
 movies.each do |movie|
@@ -20,3 +19,5 @@ movies.each do |movie|
     Movie.create(title: result["Title"], year: result["Year"].to_i, image_url: result["Poster"])
   end
 end
+
+puts "Done! 🪄"
