@@ -28,7 +28,8 @@ export default class extends Controller {
       }}) // Returns a promise (takes a while)
       .then(response => response.text())
       .then(data => {
-        console.log(data) // HTML Code of page
+        // console.log(data) // HTML Code of page
+        this.listTarget.outerHTML = data; // Replacing whole DOM
       })
   };
 }

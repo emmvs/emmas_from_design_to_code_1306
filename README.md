@@ -18,4 +18,9 @@
         "Accept": "text/plain"
       } -->
 <!-- movies_controller -->
+<!-- Unobtrusive JS -->
 <!-- respond_to -->
+<!-- Replace listTarget with data -->
+
+
+<!-- Hide Edit -->

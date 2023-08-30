@@ -4,7 +4,9 @@ Movie.destroy_all
 puts "Creating movies! 🎥 🎥 🎥"
 movies = [
   "barbie",
-  "oppenheimer"
+  "oppenheimer",
+  "Emma",
+  "Wagon"
 ]
 
 movies.each do |movie|
@@ -21,3 +23,6 @@ movies.each do |movie|
 end
 
 puts "Done! 🪄"
+
+# Barbie & Emma & Oppenheimer
+# "https://i.ibb.co/mR0V0M5/Emma-and-Bar-Bie-and-Oppenheimer.jpg"
