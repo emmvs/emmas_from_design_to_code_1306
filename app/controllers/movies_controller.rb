@@ -8,26 +8,18 @@ class MoviesController < ApplicationController
 
     # UNOBTRUSIVE JAVASCRIPT
     respond_to do |format|
-      # If Else Statement
-      format.html # Follow regular flow of Rails
-      # 👆🏻 Do this if page is normally loaded
+      # If Else statement
+      format.html
+      # ☝🏻 Do this if page is normally loaded
 
-      # Do this 👇🏻 if they come from .fetch
-      format.text {
-        render partial: "movies/list",
-        locals: {movies: @movies},
-        formats: [:html]
-      }
-      # RESEARCH: why text and noy json?
+      # 👇🏻 Do this if they come from .fetch
+      format.text { render partial: "movies/list", locals: {movies: @movies}, formats: [:html] }
     end
   end
 
   def update
     @movie = Movie.find(params[:id])
-
-    if @movie.update(movie_params)
-      redirect_to movies_path
-    end
+    @movie.update(movie_params)
 
     # UNOBTRUSIVE JAVASCRIPT
     respond_to do |format|
